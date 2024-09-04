@@ -1,25 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>salmontha.art</title>
-        <meta name="description" content="a web site for soda Lovers...">
+        <meta name="description" content="a real fishy website">
         <link rel="shortcut icon" href="gokusoda33.jpg">
         
-    </head>
+        <link rel="stylesheet" href="style.css">
 
+        
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+    </head>
     <body>
-        <img
-        src="gokusoda33.jpg"
-        alt="goku dink soda" />
-        <img
-        src="supermanreturns.jpg"
-        alt="superman dink soda" />
-<br>
-         <audio controls>
-  <source src="SKELETON.mp3" type="audio/mpeg">
-Your browser wants you dead.
-</audio> 
+        <div class="lines"></div>
+        <div id="idkk">
+            <div class="topguy">
+                <div class="left">
+                <img src="logo_beta.png" height="75px" width="250px">
+                </div>
+                
+                <div class="button">
+                    <div class="right">
+                <a href="https://x.com/SalmonthaArt/" target="_blank" rel="noopener noreferrer"><button class="button"><img src="twitter.png" width="20px" height="20px"></button></a>
+               <a href="https://salmonthaart.tumblr.com/" target="_blank" rel="noopener noreferrer"><button class="button"><img src="tumblr.png" width="20px" height="20px"></button></a>
+                <a href="https://toyhou.se/SalmonthaArt" target="_blank" rel="noopener noreferrer"><button class="button"><img src="toyhouse.png" width="20px" height="20px"></button></a>
+                </div>
+            </div>
+            </div>
+
+            
+        </div>
+
+        
+        <div id="wrapper">
+            <div class="container">
+                <div class="main">
+                    <iframe id="mainframe" src="portfolio.htm" width="100%" height="100%" frameborder="0" name="frame"></iframe>
+                </div>
+
+                <div class="links">
+                    <div class="title">
+                        <header>COMMISSIONS</header>
+                    </div>
+
+                    <div class="inner" style="padding:4px 10px;">
+                        <div class="linksbigger">
+                        <p>     Terms and Conditions </p></div>
+                           <div class="termslist">        
+                              <ul>
+                                <li>Absolutely no AI or NFTs</li>
+                                <li>All payment taken through thing I'll figure out later</li>
+                                <li>50% payment required upfront</li>
+                                <li>No refunds after the sketch has been approved</li>
+                                <li>I reserve the right to refuse a commission for any reason</li>
+                                <li>By submitting a commission, you agree to the terms and conditions</li>
+                              </ul>
+                            </div> 
+                       
+                        <tr>
+                            <tr style="display:flex";>
+                                <fieldset>
+                                    <div class="linksbigger">
+                                    <legend>Click below to enter the comms portal...</legend> </div>
+                                 </fieldset> </tr>
+                                    <tr><a href="comm.html">
+                                    
+                                        <img src="chibi1_beta.png" id="playSoundImage" onclick="delayedRedirect(event);playSound()" class="welcom" width="200"height="250" alt="welcom">
+                                            <audio id="soundClip">
+                                                <source src="merchant.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                        
+                                            <script>
+                                                function delayedRedirect(event) {
+                                                    event.preventDefault(); // Prevent the default action of the link
+                                                    setTimeout(function() {
+                                                        window.location.href = 'comm.html'; // Redirect after delay
+                                                    }, 1500); // 2000 milliseconds = 2 seconds
+                                                }
+                                                // Get the image and audio elements
+                                                var image = document.getElementById('playSoundImage');
+                                                var sound = document.getElementById('soundClip');
+                                        
+                                                // Add click event listener to the image
+                                                image.addEventListener('click', function() {
+                                                    sound.play();
+                                                });
+                                            </script>
+                                      </a> </tr>
+                    </div>
+                </div>
+
+                <div class="other">
+                    <div class="title">
+                        <header>IDK YET!! GTOFF MY ASS</header>
+                    </div>
+
+                    <div id="gokusoda33.jpg"></div>
+                </div>
+
+
+            </div>
+
+            <div class="footer">
+                contact: salmontha.art@gmail.com
+            </div>
+        </div>
+
     </body>
 </html>
